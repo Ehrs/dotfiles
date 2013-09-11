@@ -1,0 +1,5 @@
+[alias]
+  st = status
+  br = branch
+  last = log -1
+  logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
