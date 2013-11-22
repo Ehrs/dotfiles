@@ -1,9 +1,22 @@
-"For Swedish layout
-map § ~
-map ö ;
-map Ö :
-map å [
-map " ]
+" Smart Tab Complete
+function! Smart_TabComplete()
+  let line = getline('.')                         " curline
+  let substr = strpart(line, -1, col('.'))      " from start to cursor
+  let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
+  if (strlen(substr)==0)                          " nothing to match on empty string
+    return "\<tab>"
+  endif
+  let has_period = match(substr, '\.') != -1      " position of period, if any
+  let has_slash = match(substr, '\/') != -1       " position of slash, if any
+  if (!has_period && !has_slash)
+    return "\<C-X>\<C-P>"                         " existing text matching
+  elseif ( has_slash )
+    return "\<C-X>\<C-F>"                         " file matching
+  else
+    return "\<C-X>\<C-O>"                         " plugin matching
+  endif
+endfunction
+
 
 "Quicker search access!
 map <space> /
@@ -19,6 +32,9 @@ inoremap kj <esc>
 
 "Remove search box with CR
 nnoremap <CR> :noh<CR><CR>
+
+"Tab completion
+inoremap <tab> <C-r>=Smart_Tabcomplete()<CR>
 
 "Always show status line
 set laststatus=2
