@@ -10,5 +10,5 @@
   last = log -1
   lg = log --graph --decorate --pretty=oneline --abbrev-commit
   logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%cn %cr%Creset %s\"
+  loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%cn %cr%Creset %s\" --all
   pfetch = fetch --prune
