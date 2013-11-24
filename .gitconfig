@@ -12,7 +12,9 @@
   logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
   loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%cn %cr%Creset %s\" --all
   pfetch = fetch --prune
+	co = checkout
 [user]
 	name = Jonas Ehrs
+	email = jonas.ehrs@gmail.com
 [push]
 	default = simple
