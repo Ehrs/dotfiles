@@ -13,6 +13,7 @@
   loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%cn %cr%Creset %s\" --all
   pfetch = fetch --prune
 	co = checkout
+	ffmerge = merge
 [user]
 	name = Jonas Ehrs
 	email = jonas.ehrs@gmail.com
