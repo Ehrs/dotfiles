@@ -10,7 +10,7 @@ fi
 
 export EDITOR=vim
 export VISUAL="$EDITOR"
-export PAGER=less
+export PAGER="less --quit-if-one-screen --no-init"
 
 # Configure history
 export HISTCONTROL=ignoreboth

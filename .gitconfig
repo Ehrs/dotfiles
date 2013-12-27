@@ -1,6 +1,5 @@
 [core]
   editor = vim
-	pager = cat
 
 [color]
   ui = auto
