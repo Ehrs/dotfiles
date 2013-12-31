@@ -8,9 +8,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export EDITOR=vim
-export VISUAL="$EDITOR"
-export PAGER="less --quit-if-one-screen --no-init"
+. ~/.bash_zsh_common
 
 # Configure history
 export HISTCONTROL=ignoreboth
@@ -94,16 +92,4 @@ PS4="+ "
 # Smart history up/down
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
-
-PATH=.:~/bin:${PATH}
-
-# Some aliases
-alias ll="ls -la --color"
-alias gitk="gitk --all"
-alias where="type -a"
-alias rm="rm -i"
-alias eg="env | grep"
-alias hg="history | grep"
-alias vimr="vim -R"
-
 

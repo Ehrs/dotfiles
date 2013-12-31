@@ -1,0 +1,16 @@
+export EDITOR=vim
+export VISUAL="$EDITOR"
+export PAGER="less --quit-if-one-screen --no-init"
+
+export PATH=.:~/bin:${PATH}
+
+# Some aliases
+alias ll="ls -Glah"
+alias gitk="gitk --all"
+alias where="type -a"
+alias rm="rm -i"
+alias eg="env | grep"
+alias hg="history | grep"
+alias vimr="vim -R"
+
+
