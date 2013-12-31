@@ -17,6 +17,8 @@ function! Smart_TabComplete()
   endif
 endfunction
 
+"Tab completion
+inoremap <Tab> <C-R>=Smart_TabComplete()<CR>
 
 "Quicker search access!
 map <space> /
@@ -32,9 +34,6 @@ inoremap kj <esc>
 
 "Remove search box with CR
 nnoremap <CR> :noh<CR><CR>
-
-"Tab completion
-inoremap <tab> <C-r>=Smart_Tabcomplete()<CR>
 
 "Always show status line
 set laststatus=2
