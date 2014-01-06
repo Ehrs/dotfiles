@@ -23,6 +23,11 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)"
+# PWD is max 20 characters
+export PROMPT='${ret_status}%B%F{cyan}${${(%):-%20<...<%~%<<}//\//%F{magenta\}/%F{cyan\}}%f%b %{$reset_color%}'
+# PWD is max 4 directories
+export PROMPT='${ret_status}%B%F{cyan}${${(%):-%4~}//\//%F{magenta\}/%F{cyan\}}%f%b %{$reset_color%}'
 
 export PATH="/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
 
