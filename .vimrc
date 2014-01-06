@@ -84,4 +84,6 @@ nnoremap <silent> <expr> $ ScreenMovement("$")
 
 colorscheme elflord
 
+filetype plugin indent on
+syntax on
 
