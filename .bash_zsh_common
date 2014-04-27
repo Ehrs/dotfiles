@@ -3,6 +3,7 @@ export VISUAL="$EDITOR"
 export PAGER="less --quit-if-one-screen --no-init"
 export LANG=en_US.UTF-8
 export PATH=.:~/bin:${PATH}
+export HOMEBREW_GITHUB_API_TOKEN=eed29bfb7b1c848ac3a7c620226e4ed6c09695f9
 
 # Some aliases
 alias ll="ls -Glah"
