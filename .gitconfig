@@ -14,6 +14,7 @@
   pfetch = fetch --prune
   co = checkout
   ff = merge --ff-only
+  noff = merge --no-ff
 [user]
   name = Jonas Ehrs
   email = jonas.ehrs@gmail.com
