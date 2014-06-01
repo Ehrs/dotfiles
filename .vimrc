@@ -48,6 +48,9 @@ set smartcase
 set incsearch
 set scrolloff=5
 
+"Highlight search
+set hlsearch
+
 "Fix for gnome-terminal not sending escape char (Alt key)
 let c='a'
 while c <= 'z'
