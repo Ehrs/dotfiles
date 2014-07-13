@@ -5,6 +5,8 @@ export LANG=en_US.UTF-8
 export PATH=~/bin:${PATH}
 export HOMEBREW_GITHUB_API_TOKEN=eed29bfb7b1c848ac3a7c620226e4ed6c09695f9
 
+export SEMATICSOLVER=/Users/ehrs/git/scheduler/solver/sematicsolver
+
 # Some aliases
 alias ll="ls -Glah"
 alias gitk="gitk --all"
