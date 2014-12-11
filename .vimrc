@@ -41,6 +41,9 @@ set laststatus=2
 "Always show line numbers
 set number
 
+"Highlight current line
+set cursorline
+
 "Search case insensitive when all lower case letters
 set ignorecase
 set smartcase
