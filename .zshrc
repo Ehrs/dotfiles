@@ -35,5 +35,5 @@ zstyle ':completion:*' special-dirs true
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
-source .bash_zsh_common
+source ~/.bash_zsh_common
 
