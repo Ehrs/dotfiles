@@ -52,7 +52,7 @@ set ignorecase
 set smartcase
 
 set incsearch
-set scrolloff=5
+set scrolloff=15
 
 "Highlight search
 set hlsearch
