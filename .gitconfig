@@ -15,7 +15,7 @@
   co = checkout
   ff = merge --ff-only
   noff = merge --no-ff
-  deliver-to-master = !git merge-base --is-ancestor origin/master $1 && git checkout master && git merge --ff-only origin/master && git merge --no-ff $1 && git push && git push origin :$1 ; git br -d 
+  deliver-to-master = !git merge-base --is-ancestor origin/master $1 && git checkout master && git merge --ff-only origin/master && git merge --no-ff $1 && git push && git push origin :$1 && git br -d 
 [user]
   name = Jonas Ehrs
   email = jonas.ehrs@gmail.com
