@@ -29,6 +29,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+"Up down stopped working in tmux
+map <Esc>[A <Up>
+map <Esc>[B <Down>
+map <Esc>[C <Right>
+map <Esc>[D <Left>
+
 inoremap jk <esc>
 inoremap kj <esc>
 
@@ -65,12 +71,6 @@ while c <= 'z'
   let c = nr2char(1+char2nr(c))
 endw
 set timeout ttimeoutlen=50
-
-"Alt+j/k moves code lines in normal and edit mode
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
 
 " mapping to make movements operate on 1 screen line in wrap mode
 function! ScreenMovement(movement)
