@@ -11,7 +11,6 @@
   lg = log --graph --decorate --pretty=oneline --abbrev-commit
   logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
   loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%an %ar%Creset %s\" --all
-  pfetch = fetch --prune
   co = checkout
   ff = merge --ff-only
   noff = merge --no-ff
@@ -23,4 +22,4 @@
   default = simple
 
 [fetch]
-	prune = true
+  prune = true
