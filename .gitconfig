@@ -19,7 +19,7 @@
   name = Jonas Ehrs
   email = jonas.ehrs@gmail.com
 [push]
-  default = simple
+  default = current
 
 [fetch]
   prune = true
