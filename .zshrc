@@ -32,8 +32,15 @@ export PROMPT='${ret_status}%B%F{cyan}${${(%):-%4~}//\//%F{magenta\}/%F{cyan\}}%
 export PATH="/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
 
 zstyle ':completion:*' special-dirs true
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '\eOA' up-line-or-beginning-search
+bindkey '\e[A' up-line-or-beginning-search
+bindkey '\eOB' down-line-or-beginning-search
+bindkey '\e[B' down-line-or-beginning-search
 
 source ~/.bash_zsh_common
 
