@@ -14,4 +14,5 @@ alias eg="env | grep"
 alias hg="history | grep"
 alias vimr="vim -R"
 
+highlight () {grep --color=always -iE "$1|$" | less -r}
 
