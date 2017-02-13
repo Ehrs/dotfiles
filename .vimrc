@@ -96,3 +96,7 @@ colorscheme elflord
 filetype plugin indent on
 syntax on
 
+"Visible special characteers
+set list
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+
