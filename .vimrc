@@ -45,7 +45,7 @@ set number
 set cursorline
 
 "Space indent instead of tabs
-set expandtab
+"set expandtab
 
 "Search case insensitive when all lower case letters
 set ignorecase
