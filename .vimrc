@@ -1,7 +1,8 @@
 " Smart Tab Complete
+" http://vim.wikia.com/wiki/Smart_mapping_for_tab_completion
 function! Smart_TabComplete()
   let line = getline('.')                         " curline
-  let substr = strpart(line, -1, col('.'))      " from start to cursor
+  let substr = strpart(line, -1, col('.')+1)      " from start of the current lint to one character right of the cursor
   let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
   if (strlen(substr)==0)                          " nothing to match on empty string
     return "\<tab>"
