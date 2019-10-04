@@ -4,8 +4,8 @@ export PAGER="less --quit-if-one-screen --no-init"
 export LANG=en_US.UTF-8
 export PATH=~/bin:${PATH}
 export GTEST_PATH=/home/jonas/gtest_stuff
-export SEMATICSOLVER=/home/jonas/code/yoda/solver_release
-export PATH=$PATH:/usr/local/go/bin
+export SEMATICSOLVER=/home/jonas/code/yoda/sematicsolver
+export PATH=$PATH:/usr/local/go/bin:/home/jonas/.local/bin
 export HOMEBREW_GITHUB_API_TOKEN=eed29bfb7b1c848ac3a7c620226e4ed6c09695f9
 export DEBUG_FILES_PATH=/home/jonas/code/debug_files
 
