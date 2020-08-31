@@ -15,6 +15,7 @@ alias hg="history | grep"
 alias vimr="vim -R"
 
 highlight () {
-  grep --color=always -iE "$1|$" | less -r
+ grep --color=always -iE "$1|$" | less -r 
 }
+
 
