@@ -1,5 +1,6 @@
 [core]
   editor = vim
+#  pager = /home/jonas/bin/git-diff-syntax-highlight.rb | less --no-init --quit-if-one-screen
 
 [color]
   ui = auto
@@ -11,7 +12,7 @@
   lg = log --graph --decorate --pretty=oneline --abbrev-commit
   logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
   loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%an %ar%Creset %s\" --all
-  logggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%an %ai%Creset %s\" --all
+  logggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%ai %an%Creset %s\" --all
   co = checkout
   ff = merge --ff-only
   noff = merge --no-ff
