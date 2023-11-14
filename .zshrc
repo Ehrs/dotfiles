@@ -41,6 +41,8 @@ bindkey '\eOA' up-line-or-beginning-search
 bindkey '\e[A' up-line-or-beginning-search
 bindkey '\eOB' down-line-or-beginning-search
 bindkey '\e[B' down-line-or-beginning-search
+bindkey "^[^[[C" forward-word # Option+right
+bindkey "^[^[[D" backward-word #Option+left
 
 source ~/.bash_zsh_common
 

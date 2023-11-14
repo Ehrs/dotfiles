@@ -21,8 +21,10 @@ endfunction
 "Tab completion
 inoremap <Tab> <C-R>=Smart_TabComplete()<CR>
 
-"Quicker search access!
-map <space> /
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 
 "Switching between windows must be easier
 map <C-j> <C-W>j

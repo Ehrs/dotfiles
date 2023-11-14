@@ -13,9 +13,11 @@
   logg = log --graph --decorate --pretty=oneline --abbrev-commit --all
   loggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%an %ar%Creset %s\" --all
   logggg = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%ai %an%Creset %s\" --all
+  logb = log --graph --pretty=format:\"%C(auto)%h%d %C(magenta bold)%ai %an%Creset %s\"
   co = checkout
   ff = merge --ff-only
   noff = merge --no-ff
+  continue = "-c core.editor=true rebase --continue"
 [user]
   name = Jonas Ehrs
   email = jonas.ehrs@gmail.com
@@ -25,4 +27,4 @@
 [fetch]
   prune = true
 [rebase]
-	autosquash = true
+  autosquash = true
