@@ -29,6 +29,9 @@ export PROMPT='${ret_status}%B%F{cyan}${${(%):-%20<...<%~%<<}//\//%F{magenta\}/%
 # PWD is max 4 directories
 export PROMPT='${ret_status}%B%F{cyan}${${(%):-%4~}//\//%F{magenta\}/%F{cyan\}}%f%b %{$reset_color%}'
 
+#Server stuff
+#export PROMPT='${ret_status}%B%F{yellow}%m%F{cyan}${${(%):-%4~}//\//%F{magenta\}/%F{cyan\}}%f%b %{$reset_color%}'
+
 export PATH="/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
 
 zstyle ':completion:*' special-dirs true
